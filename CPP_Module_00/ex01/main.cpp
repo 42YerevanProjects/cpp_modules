@@ -36,7 +36,7 @@ int main()
 	PhoneBook	phonebook;
 	std::string	data[5];
 	std::string	input;
-	int			index;
+	int 		index;
 
 	while (42)
 	{
