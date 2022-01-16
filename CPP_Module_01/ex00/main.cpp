@@ -22,7 +22,7 @@ void	ponyOnTheHeap(void)
 
 void	ponyOnTheStack(void)
 {
-	Pony	stackpony("Arthur", "Sweeden", 4);
+	Pony	stackPony("Arthur", "Sweeden", 4);
 }
 
 int	main(void)
