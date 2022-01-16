@@ -12,52 +12,52 @@
 
 #include "Contact.hpp"
 
-std::string&	Contact::get_firstname() const
+const std::string&	Contact::get_firstname() const
 {
-	return (this->_firstname);
+	return (this->firstname);
 }
 
-std::string&	Contact::get_lastname() const
+const std::string&	Contact::get_lastname() const
 {
-	return (this->_lastname);
+	return (this->lastname);
 }
 
-std::string&	Contact::get_nickname() const
+const std::string&	Contact::get_nickname() const
 {
-	return (this->_nickname);
+	return (this->nickname);
 }
 
-std::string&	Contact::get_secret() const
+const std::string&	Contact::get_secret() const
 {
-	return (this->_secret);
+	return (this->secret);
 }
 
-std::string&	Contact::get_number() const
+const std::string&	Contact::get_number() const
 {
-	return (this->_number);
+	return (this->number);
 }
 
 void		Contact::set_firstname(std::string firstname)
 {
-	this->_firstname = firstname;
+	this->firstname = firstname;
 }
 
 void		Contact::set_lastname(std::string lastname)
 {
-	this->_lastname = lastname;
+	this->lastname = lastname;
 }
 
 void		Contact::set_nickname(std::string nickname)
 {
-	this->_nickname = nickname;
+	this->nickname = nickname;
 }
 
 void		Contact::set_secret(std::string secret)
 {
-	this->_secret = secret;
+	this->secret = secret;
 }
 
 void		Contact::set_number(std::string number)
 {
-	this->_number = number;
+	this->number = number;
 }
