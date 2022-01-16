@@ -5,8 +5,8 @@
 #                                                     +:+ +:+         +:+      #
 #    By: shovsepy <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2022/01/15 21:07:05 by aisraely          #+#    #+#              #
-#    Updated: 2022/01/15 21:10:44 by aisraely         ###   ########.fr        #
+#    Created: 2022/01/15 21:07:05 by shovsepy          #+#    #+#              #
+#    Updated: 2022/01/15 21:10:44 by shovsepy         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,6 +19,9 @@ CC = c++
 CFLAGS = -Wall -Wextra -Werror -std=c++98
 
 all: $(NAME)
+
+.cpp.o:
+	$(CC) $(CFLAGS) -c $< -o $(<:.cpp=.o)
 
 $(NAME): $(OBJS)
 	$(CC) $(OBJS) $(CFLAGS) -o $(NAME)
