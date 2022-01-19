@@ -27,7 +27,7 @@ Zombie::Zombie(std::string name, std::string type)
 
 Zombie::~Zombie() 
 {
-	std::cout << this->name << "died!" << std::endl;
+	std::cout << this->name << " died!" << std::endl;
 }
 
 const std::string&	Zombie::get_name() const
