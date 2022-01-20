@@ -16,24 +16,24 @@
 #include <string>
 
 class Pony {
-private:
-	std::string	name;
-	std::string	origin;
-	int 		age;
-	bool		magical;
-public:
-	Pony(std::string name, std::string origin, int age);
+	private:
+		std::string	name;
+		std::string	origin;
+		int 		age;
+		bool		magical;
+	public:
+		Pony(std::string name, std::string origin, int age);
 
-	const std::string&	get_name(void) const;
-	const std::string&	get_origin(void) const;
-	int 				get_age(void) const;
-	bool				is_magical(void) const;
+		const std::string&	getName(void) const;
+		const std::string&	getOrigin(void) const;
+		int 				getAge(void) const;
+		bool				isMagical(void) const;
 	
-	void				set_name(std::string name);
-	void				set_origin(std::string origin);
-	void				set_age(int age);
+		void				setName(std::string name);
+		void				setOrigin(std::string origin);
+		void				setAge(int age);
 
-	void				run(void) const;
-	void				eat(void) const;
-	void				speak(void) const;
+		void				run(void) const;
+		void				eat(void) const;
+		void				speak(void) const;
 };

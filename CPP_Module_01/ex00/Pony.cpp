@@ -20,37 +20,37 @@ Pony::Pony(std::string name, std::string origin, int age)
 	this->magical = origin == "Iceland" ? true : false;
 }
 
-const std::string&	Pony::get_name() const
+const std::string&	Pony::getName() const
 {
 	return (this->name);
 }
 
-const std::string&	Pony::get_origin() const
+const std::string&	Pony::getOrigin() const
 {
 	return (this->origin);
 }
 
-int 	Pony::get_age() const
+int 	Pony::getAge() const
 {
 	return (this->age);
 }
 
-bool	Pony::is_magical() const
+bool	Pony::isMagical() const
 {
 	return (this->magical);
 }
 
-void	Pony::set_name(std::string name)
+void	Pony::setName(std::string name)
 {
 	this->name = name;
 }
 
-void	Pony::set_origin(std::string origin)
+void	Pony::setOrigin(std::string origin)
 {
 	this->origin = origin;
 }
 
-void	Pony::set_age(int age)
+void	Pony::setAge(int age)
 {
 	if (age > 0)
 		this->age = age;
@@ -69,7 +69,7 @@ void	Pony::eat() const
 
 void	Pony::speak() const
 {
-	if (!is_magical())
+	if (!isMagical())
 	{
 		std::cout << name << "IS NOT A MAGICAL PONY AND CANNOT SPEAK!" << std::endl;
 		return;

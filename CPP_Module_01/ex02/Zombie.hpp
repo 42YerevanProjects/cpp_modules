@@ -16,18 +16,18 @@
 #include <string>
 
 class Zombie {
-private:
-	std::string	name;
-	std::string	type;
-public:
-	Zombie(std::string name, std::string type);
-	Zombie(void)
-	~Zombie(void);
+	private:
+		std::string	name;
+		std::string	type;
+	public:
+		Zombie(std::string name, std::string type);
+		Zombie(void);
+		~Zombie(void);
 
-	const std::string&	get_name(void) const;
-	const std::string&	get_type(void) const;
-	void				set_name(std::string name);
-	void				set_type(std::string type);
+		const std::string&	getName(void) const;
+		const std::string&	getType(void) const;
+		void				setName(std::string name);
+		void				setType(std::string type);
 
-	void				announce(void) const;
+		void				announce(void) const;
 };

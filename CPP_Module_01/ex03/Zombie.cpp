@@ -26,22 +26,22 @@ Zombie::~Zombie()
 	std::cout << this->name << " died!" << std::endl;
 }
 
-const std::string&	Zombie::get_name() const
+const std::string&	Zombie::getName() const
 {
 	return (this->name);
 }
 
-const std::string&	Zombie::get_type() const
+const std::string&	Zombie::getType() const
 {
 	return (this->type);
 }
 
-void	Zombie::set_name(std::string name)
+void	Zombie::setName(std::string name)
 {
 	this->name = name;
 }
 
-void	Zombie::set_type(std::string type)
+void	Zombie::setType(std::string type)
 {
 	this->type = type;
 }

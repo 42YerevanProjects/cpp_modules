@@ -15,7 +15,7 @@
 int	main()
 {
 	ZombieHorde	horde(4);
-	
+
 	std::cout << "I just created 4 zombies!!!\n" << std::endl;
 	std::cout << "Let's make them announce themselves\n" << std::endl;
 

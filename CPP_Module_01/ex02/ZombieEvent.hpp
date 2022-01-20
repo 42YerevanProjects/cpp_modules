@@ -16,11 +16,11 @@
 #include <cstdlib>
 
 class ZombieEvent {
-private:
-	std::string	type;
-	static std::string	namepool[7];
-public:
-	Zombie	*newZombie(std::string name) const;
-	Zombie	*randomChump(void) const;
-	void	setZombieType(std::string type);
+	private:
+		std::string	type;
+		static std::string	namepool[7];
+	public:
+		Zombie	*newZombie(std::string name) const;
+		Zombie	*randomChump(void) const;
+		void	setZombieType(std::string type);
 };
