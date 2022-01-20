@@ -21,7 +21,8 @@ private:
 	std::string	type;
 public:
 	Zombie(std::string name, std::string type);
-	~Zombie();
+	Zombie(void)
+	~Zombie(void);
 
 	const std::string&	get_name(void) const;
 	const std::string&	get_type(void) const;

@@ -12,18 +12,13 @@
 
 #include "Zombie.hpp"
 
-void	Zombie::announce() const
-{
-	std::cout << "<" << this->name << " ";
-	std::cout << "(" << this->type << ")>";
-	std::cout << " Braiiiiiiinnnssss..." << std::endl;
-}
-
 Zombie::Zombie(std::string name, std::string type)
 	: name(name), type(type)
 {
 	announce();
 }
+
+Zombie::Zombie() {}
 
 Zombie::~Zombie() 
 {
@@ -48,5 +43,12 @@ void	Zombie::set_name(std::string name)
 void	Zombie::set_type(std::string type)
 {
 	this->type = type;
+}
+
+void	Zombie::announce() const
+{
+	std::cout << "<" << this->name << " ";
+	std::cout << "(" << this->type << ")>";
+	std::cout << " Braiiiiiiinnnssss..." << std::endl;
 }
 
