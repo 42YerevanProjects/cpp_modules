@@ -20,11 +20,12 @@ ZombieHorde::ZombieHorde(int N)
 	int 		i;
 
 	i = 0;
+	srand(time(NULL));
 	this->zombies = new Zombie[N];
 	while (i < N)
 	{
-		this->zombies[i].set_name(this->namepool[rand() % 7]);
-		this->zombies[i].set_type(this->typepool[rand() % 7]);
+		this->zombies[i].setName(this->namepool[rand() % 7]);
+		this->zombies[i].setType(this->typepool[rand() % 7]);
 		i++;
 	}
 	this->size = N;
