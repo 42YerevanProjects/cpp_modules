@@ -46,10 +46,10 @@ int main(int argc, char **argv)
 {
 	std::fstream	istream;
 	std::fstream	ostream;
-	std::string		line;
-	char			*fname;
-	char			*s1;
-	char			*s2;
+	std::string 	line;
+	char 			*fname;
+	char 			*s1;
+	char 			*s2;
 	
 	if (argc != 4 || argv[1][0] == '\0' || argv[2][0] == '\0' || argv[3][0] == '\0')
 	{
