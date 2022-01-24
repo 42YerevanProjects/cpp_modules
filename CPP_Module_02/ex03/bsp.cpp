@@ -42,6 +42,6 @@ bool	bsp(const Point& a, const Point& b, const Point& c, const Point& point)
 	/* Calculate area of triangle ABP */
 	float A3 = area(a, b, point);
 
-   /* Check if sum of A1, A2 and A3 is same as A */
-   return (A == A1 + A2 + A3);
+	/* Check if sum of A1, A2 and A3 is same as A */
+	return (A == A1 + A2 + A3);
 }
