@@ -14,16 +14,23 @@
 ScavTrap::ScavTrap(void) : ClapTrap()
 {
 	std::cout << "ScavTrap default constructor has been called!" << std::endl;
+
 }
 
 ScavTrap::ScavTrap(const std::string& name) : ClapTrap(name)
 {
 	std::cout << "<ScavTrap " << this->name << "> Status: Created" << std::endl;
+	this->hitPoints = 100;
+	this->energyPoints = 50;
+	this->attackDamage = 20;
 }
 
 ScavTrap::ScavTrap(const ScavTrap& other) : ClapTrap(other)
 {
 	std::cout << "<ScavTrap copy-constructor has been called!> Status: Cloned" << std::endl;
+	this->hitPoints = 100;
+	this->energyPoints = 50;
+	this->attackDamage = 20;
 }
 
 ScavTrap::~ScavTrap(void)
