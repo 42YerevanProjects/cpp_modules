@@ -16,9 +16,9 @@
 ClapTrap::ClapTrap(void)
 {
 	std::cout << "ClapTrap default constructor has been called!" << std::endl;
-	this->hitPoints = 100;
-	this->energyPoints = 100;
-	this->attackDamage = 30;
+	this->hitPoints = 10;
+	this->energyPoints = 10;
+	this->attackDamage = 0;
 }
 
 ClapTrap::ClapTrap(const ClapTrap& other) 
@@ -32,9 +32,9 @@ ClapTrap::ClapTrap(std::string name)
 {
 	std::cout << "<ClapTrap " << name << "> " << "Status: Created" << std::endl;
 	this->name = name;
-	this->hitPoints = 100;
-	this->energyPoints = 100;
-	this->attackDamage = 30;
+	this->hitPoints = 10;
+	this->energyPoints = 10;
+	this->attackDamage = 0;
 }
 
 ClapTrap::~ClapTrap(void)
