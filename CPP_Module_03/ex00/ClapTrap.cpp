@@ -15,17 +15,21 @@
 /* Constructors and the Destructor */
 ClapTrap::ClapTrap(void)
 {
-	std::cout << "Default Constructoe has bee called!" << std::endl;
+	std::cout << "Default constructor has been called!" << std::endl;
 	this->hitPoints = 10;
 	this->energyPoints = 10;
 	this->attackDamage = 0;
 }
 
-ClapTrap::ClapTrap(const ClapTrap& other) { *this = other; } // Overloaded =
+ClapTrap::ClapTrap(const ClapTrap& other)
+{
+	std::cout << "<ClapTrap copy-constructor has been called!> Status: Cloned" << std::endl;
+	*this = other;  // Overloaded =
+}
 
 ClapTrap::ClapTrap(std::string name)
 {
-	std::cout << "<" << name << "> " << "Status: Created" << std::endl;
+	std::cout << "<ClapTrap " << name << "> " << "Status: Created" << std::endl;
 	this->name = name;
 	this->hitPoints = 10;
 	this->energyPoints = 10;
@@ -34,7 +38,7 @@ ClapTrap::ClapTrap(std::string name)
 
 ClapTrap::~ClapTrap(void)
 {
-	std::cout << "<" << this->name << "> " << "Status: Dead" << std::endl;
+	std::cout << "<ClapTrap " << this->name << "> " << "Status: Dead" << std::endl;
 }
 
 /* Assignation operator overload */
