@@ -19,11 +19,17 @@ FragTrap::FragTrap(void) : ClapTrap()
 FragTrap::FragTrap(const std::string& name) : ClapTrap(name)
 {
 	std::cout << "<FragTrap " << this->name << "> Status: Created" << std::endl;
+	this->hitPoints = 100;
+	this->energyPoints = 100;
+	this->attackDamage = 30;
 }
 
 FragTrap::FragTrap(const FragTrap& other) : ClapTrap(other)
 {
 	std::cout << "<FragTrap copy-constructor has been called!> Status: Cloned" << std::endl;
+	this->hitPoints = 100;
+	this->energyPoints = 100;
+	this->attackDamage = 30;
 }
 
 FragTrap::~FragTrap(void)
