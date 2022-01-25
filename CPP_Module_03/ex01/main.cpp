@@ -41,5 +41,7 @@ int	main()
 	Daniel.attack("Lions");
 	Daniel.attack("Kings");
 
-	std::cout << "\nFights are over..." << std::endl;
+	std::cout << "\nFights are over. Guarding time...\n" << std::endl;
+	Daniel.guardGate();
+	std::cout << "\nGuareded too much...Enough!\n" << std::endl;
 }
