@@ -42,6 +42,12 @@ int main()
 	*(animals[5]) = *(animals[7]);
 	std::cout << "First idea of animal[5]: " << animals[5]->getBrain()->getIdea(0) << std::endl;
 
+	std::cout << "\nAdding different ideas to animals[5] and animals[7] (deep copy)" << std::endl;
+	animals[5]->getBrain()->addIdea("Last idea of animals[5]");
+	std::cout << "Last idea of animal[5]: " << animals[5]->getBrain()->getIdea(4) << std::endl;
+	animals[7]->getBrain()->addIdea("Last idea of animals[7]");
+	std::cout << "Last idea of animal[7]: " << animals[7]->getBrain()->getIdea(4) << std::endl;
+	
 	std::cout << "\nDestructing Animals\n" << std::endl;
 	for (int i = 0; i < NUMBER_OF_ANIMALS; i++)
 		delete animals[i];
