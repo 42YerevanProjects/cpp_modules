@@ -22,7 +22,7 @@ class WrongAnimal {
 	public:
 		WrongAnimal(void);
 		WrongAnimal(const WrongAnimal& other);
-		~WrongAnimal(void);
+		virtual ~WrongAnimal(void);
 
 		WrongAnimal&		operator=(const WrongAnimal& other);
 		const std::string&	getType(void) const;
