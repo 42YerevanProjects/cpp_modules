@@ -22,6 +22,8 @@ const char		*Bureaucrat::GradeTooLowException::what() const throw()
 	return ("Grade is lower than the minimum!");
 }
 
+Bureaucrat::Bureaucrat(void) {}
+
 Bureaucrat::Bureaucrat(const std::string& name, int grade) : name(name)
 {
 	if (grade < 1)

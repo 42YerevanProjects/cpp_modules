@@ -22,6 +22,8 @@ class Bureaucrat {
 		static const int	minGrade = 150;
 		const std::string	name;
 		int					grade;
+
+		Bureaucrat(void);
 	public:
 		Bureaucrat(const std::string& name, int grade);
 		Bureaucrat(const Bureaucrat& other);
