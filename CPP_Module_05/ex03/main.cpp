@@ -31,6 +31,7 @@ int main()
 	std::cout << std::endl;
 	
 	f = intern.makeForm("undefined", "0U");
+	delete f;
 
 	return 0;
 }
