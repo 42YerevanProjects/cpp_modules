@@ -14,6 +14,7 @@
 #include "ShrubberyCreationForm.hpp"
 #include "RobotomyRequestForm.hpp"
 #include "PresidentialPardonForm.hpp"
+#include <ctime>
 
 int main()
 {
@@ -22,6 +23,7 @@ int main()
 	Bureaucrat		Loki("Loki", 150);
 	Form			*form = NULL;
 
+	srand(time(NULL));
 	std::cout << "Let's execute an unsigned presidential pardon form" << std::endl;
 	try
 	{
@@ -55,6 +57,12 @@ int main()
 		form = new RobotomyRequestForm("28B");
 		Odin.signForm(*form);
 		std::cout << std::endl;
+		Thor.executeForm(*form);
+		Thor.executeForm(*form);
+		Thor.executeForm(*form);
+		Thor.executeForm(*form);
+		Thor.executeForm(*form);
+		Thor.executeForm(*form);
 		Thor.executeForm(*form);
 		delete form;
 		form = NULL;
