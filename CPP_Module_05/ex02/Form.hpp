@@ -45,7 +45,7 @@ class Form {
 		void				beSigned(const Bureaucrat& b);
 		virtual void		execute(const Bureaucrat& executor) const = 0;
 
-	private:
+	public:
 		class GradeTooHighException : public std::exception
 		{
 			private:
