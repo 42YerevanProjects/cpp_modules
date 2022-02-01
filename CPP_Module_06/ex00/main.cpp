@@ -18,7 +18,7 @@ int	main(int argc, char **argv)
 
 	if (argc != 2)
 	{
-		std::cout << "THe program takes a string literal as an input!" << std::endl;
+		std::cout << "The program takes a string literal as an input!" << std::endl;
 		return (1);
 	}
 
