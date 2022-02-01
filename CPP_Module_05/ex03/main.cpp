@@ -11,7 +11,6 @@
 /* ************************************************************************** */
 
 #include "Intern.hpp"
-#include <ctime>
 
 int main()
 {
@@ -31,7 +30,8 @@ int main()
 	std::cout << *f << std::endl;
 	std::cout << std::endl;
 	
-	f = intern.makeForm("undefined", "28A");
+	f = intern.makeForm("undefined", "0U");
+	delete f;
 
 	return 0;
 }
