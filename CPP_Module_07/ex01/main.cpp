@@ -33,13 +33,13 @@ int	main()
 	srand(time(NULL));
 
 	std::cout << "Displaying int Array\n" << std::endl;
-	::iter(intArray, 10, &display);
+	iter<int>(intArray, 10, &display);
 
 	std::cout << "\nSetting each value to random integer" << std::endl;
-	::iter(intArray, 10, &setRandomValue);
+	iter<int>(intArray, 10, &setRandomValue);
 
 	std::cout << "\nDisplaying int Array with random values\n" << std::endl;
-	::iter(intArray, 10, &display);
+	::iter<int>(intArray, 10, &display);
 
 	return (0);
 }
