@@ -6,7 +6,7 @@
 /*   By: shovsepy <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/01 20:01:17 by shovsepy          #+#    #+#             */
-/*   Updated: 2022/02/01 19:15:29 by shovsepy         ###   ########.fr       */
+/*   Updated: 2022/04/05 19:54:13 by shovsepy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,21 +45,22 @@ void	identify(Base *p)
 
 void	identify(Base &p)
 {
+	Base	ptr;
 	try
 	{
-		dynamic_cast<A&>(p);
+		ptr = dynamic_cast<A&>(p);
 		std::cout << "A" << std::endl;
 	}
 	catch(std::exception& e) {}
 	try
 	{
-		dynamic_cast<B&>(p);
+		ptr = dynamic_cast<B&>(p);
 		std::cout << "B" << std::endl;
 	}
 	catch(std::exception& e) {}
 	try
 	{
-		dynamic_cast<C&>(p);
+		ptr = dynamic_cast<C&>(p);
 		std::cout << "C" << std::endl;
 	}
 	catch(std::exception& e) {}
