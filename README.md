@@ -5,7 +5,7 @@
 These modules of C++ are designed to help you understand the specificities of the language when compared to C. Time to dive into Object-Oriented Programming!
 This Project contains 8 modules every one of the 8 Modules designed To help you discover new Things in C++ (**Object Oriented Programming**). You can start with watching this [videos](https://youtube.com/playlist?list=PLlrATfBNZ98dudnM48yfGUldqGD0S4FFb) then you can advance by reading [this](https://www.learncpp.com). If you want to dive deeper look at the bottom part.
 
-> ⚠️ **Warning**: Don't copy/paste code you don't understand: it's bad for you, and for the school.
+>  **Warning**: Don't copy/paste code you don't understand: it's bad for you, and for the school.
 
 ## Specifics
 
